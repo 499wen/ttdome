@@ -1,0 +1,532 @@
+/*  正文 隔离框个 start  */
+.center {
+    width: 100%;
+    height: 60px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center .contiune {
+    width: 1180px;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.center .contiune .left {
+    width: 40%;
+    height: 100%;
+    line-height: 59px;
+    float: left;
+}
+
+.center .contiune .left > img {
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+.center .contiune .left > .path a {
+    color: #000;
+    font-size: 16px;
+} 
+
+.center .contiune .left > .path a:last-child {
+    color: rgb(187, 183, 183);
+    cursor: default;
+}
+
+.center .contiune .right {
+    width: 320px;
+    height: 100%;
+    float: right;
+    display: flex;
+    align-items: center;
+}
+
+/*  正文 隔离框个 end  */
+
+/*  主体部分 start  */
+.body >  .left {
+    width: 10%;
+    float: left;
+}
+
+.body >  .left > ul {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.body >  .left > ul li {
+    height: 60px;
+    line-height: 60px;
+    box-sizing: border-box;
+}
+
+.body >  .left > ul li:nth-child(n+2) {
+    height: 45px;
+}
+
+.body >  .left > ul li > span a{
+    font-size: 19px;
+    font-family: Georgia;
+    color: #f85959;
+}
+
+.body >  .left > ul li > span .fa {
+    font-size: 35px;
+    vertical-align: middle;
+    position: relative;
+}
+
+.body >  .left > ul li:first-child {
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.body >  .left > ul li > span a .fa:hover{
+    color: #f89595;
+}
+
+.body >  .left > ul li:nth-child(n+2) > span a {
+    color: rgba(0,0,0,0.5);
+    font-size: 16px;
+}
+
+.body >  .left > ul li:nth-child(n+2) > span a .fa {
+    color: #fff;
+    font-size: 22px;
+    border: 6px solid rgb(255,102,49);
+    border-radius: 6px;
+    margin-right: 15px;
+}
+
+.body >  .left > ul li:nth-child(n+2) > span a .fa:hover:after {
+    content: '';
+    width: 34px;
+    height: 34px;
+    background: rgba(247, 246, 246, 0.3);
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    border-radius: 6px;
+}
+
+.body >  .left > ul li:nth-child(n+2) span i {
+    background-color: rgb(255, 102, 49);
+}
+
+.body >  .left > ul li:nth-child(n+3) span i {
+    background-color: rgb(255, 189, 29);
+}
+
+.body >  .left > ul li:nth-child(n+3) > span a .fa {
+    border: 6px solid rgb(255, 189, 29);
+}
+
+.body >  .left > ul li:nth-child(n+4) span i {
+    background-color: rgb(82, 205, 62);
+}
+
+.body >  .left > ul li:nth-child(n+4) > span a .fa {
+    border: 6px solid rgb(82, 205, 62);
+}
+
+/*  主体部分 end  */
+
+/* 中间 文章详情 start */
+.midden {
+    width: 55%;
+    height: 500px;
+    background-color: rgba(226, 224, 224, .2);
+    float: left;
+    margin-left: 45px;
+    
+}
+
+.midden .title {
+    font-size: 34px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 10px;
+} 
+
+.midden .text-message {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.midden .text-message > span {
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.midden .text-message .label {
+    height: 20px;
+    display: inline-block;
+    padding: 0px 3px;
+    line-height: 20px;
+    box-sizing: border-box;
+    border: 1px solid #999;
+}
+
+.midden .key a{
+    color: #000;
+}
+
+.midden .key .left {
+    display: inline-block;
+    float: left;
+    color: #ccc;
+}
+
+.midden .key .left > a {
+    color: #406599;
+}
+
+.midden .key .right {
+    display: inline-block;
+}
+
+.midden .key .right > a {
+    float: right;
+    color: #999;
+    margin-left: 10px;
+}
+
+.midden .key .fa {
+    color: #999;
+    font-size: 18px;
+}
+
+.midden .key .right > a > .fa:hover {
+    color: rgba(156, 154, 154, .5);
+}
+
+/* 评论 - start */
+
+.midden .comments {
+    width: 100%;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.midden .comments .com-row {
+    display: block;
+    color: #657180;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.midden .comments .com-row > span {
+    font-family: Georgia;
+    color: #f85959;
+    font-size: 24px;
+    font-weight: 100;
+}
+
+.midden .comments .self-com {
+    width: 100%;
+    padding: 20px 0;
+    margin-bottom: 200px;
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.midden .comments .self-com > div {
+    display: inline-block;
+}
+
+.midden .comments .self-com .img {
+    width: 43px;
+    height: 33px;
+    border-radius: 33px;
+    margin-top: 10px;
+}
+
+.midden .comments .self-com .img > img {
+    width: 33px;
+    height: 33px;
+    border-radius: 33px;
+}
+
+.midden .comments .self-com .text {
+    flex: 1;
+    background-color: #fff;
+    box-sizing: border-box;
+    border: 1px solid #3f404c;
+}
+
+.midden .comments .self-com .text .big {
+    width: 100%;
+    height: 120px;
+    padding: 5px 20px 5px 20px;
+    box-sizing: border-box;
+    display: none;
+    transition: all .4s;
+
+}
+
+.midden .comments .self-com .text .big > textarea {
+    background-color: transparent;
+    font-size: 16px !important;
+    color: #000 !important;
+}
+
+.midden .comments .self-com .text .sm {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    /* background-color: #f4f5f6; */
+}
+
+.midden .comments .self-com .text .input {
+    width: 80%;
+    height: 100%;
+    background-color: transparent;
+    padding: 5px 0px 5px 20px;
+}
+
+.comments .self-com .text .input input[type="text"] {
+    height: 70%;
+    background-color: transparent;
+    font-size: 14px;
+}
+
+.comments .self-com .text .com-btn {
+    background-color: #3f404c;
+    flex: 1;
+    color: #fff;
+    line-height: 48px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* 评论 - end */
+
+/* 中间 文章详情 end */
+
+/* 右边 广告位 start */
+.right {
+    width: 320px;
+    float: right;
+}
+.right .follow {
+    width: 100%;
+    height: 320px;
+    background-color: #f5f6f7;
+    box-sizing: border-box;
+    border-top: 2px solid #ed4040;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.right .follow .box {
+    width: 85%;
+    height: 85%;
+    box-sizing: border-box;
+}
+
+.right .follow .box .title {
+    width: 100%;
+    height: 30%;
+    display: inline-block;
+    box-sizing: border-box;
+    border-bottom: 1px solid #e8e8e8;
+}
+.right .follow .box .title div {
+    display: inline-block;
+    margin-right: 10px;
+    position: relative;
+}
+
+.right .follow .box .title .img {
+    vertical-align: top;
+}
+
+.right .follow .box .title img {
+    width: 55px;
+    height: 55px;
+    border-radius: 70px;
+}
+
+.right .follow .box .title .cat-name > .fa-caret-left {
+    color: #2a90d7;
+    position: absolute;
+    left: -5px;
+    top: 25px;
+}
+
+.right .follow .box .title .cat-name > a {
+    display: inline-block;
+    background-color: #2a90d7;
+    width: 70px;
+    height: 25px;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 25px;
+}
+
+.right .follow .box .ul {
+    width: 100%;
+    display: inline-block;
+    /* background-color: #fff; */
+}
+
+.right .follow .box .ul > li {
+    width: 100%;
+    height: 50px;
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    line-height: 1.2em;
+} 
+
+.right .follow .box .ul > li:before {
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 4px;
+    background: #999;
+    left: 0;
+    top: 6px;
+}
+
+.right .follow .box .ul > li > a {
+    color: #000;
+    margin-left: 10px;
+}
+
+/*   模态框 - start   */
+
+.trun {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 500;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/*  评论区模态框 - start  */
+.moda-lity-com,.moda-lity-con {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    margin-left: -341px;
+    width: 682px;
+    background-color: #fff;
+    border-radius: 3px;
+    box-sizing: border-box;
+    padding: 30px;
+    display: none;
+    z-index: 1000;
+}
+
+.moda-lity-con {
+    display: block;
+}
+
+.moda-lity-com .form {
+    margin-left: 20px;
+    line-height: 2;
+}
+
+.moda-lity-com .form {
+    cursor: pointer;
+}
+
+.btn {
+    float: right;
+}
+
+.btn input[type="submit"],.btn input[type="button"] {
+    resize:none;
+    outline:none;
+    border: none;
+    width: 60px;
+    height: 35px;
+    background-color: #ed4040;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    box-sizing: border-box;
+    border: 1px solid #ed4040;
+}
+
+ .btn input[type="button"] {
+    background-color: #fff;
+    border-color: #999;
+    color: #000;
+}
+
+ .btn > input[type="submit"]:hover {
+    background: #d53a3a;
+    border-color: #d53a3a;
+    color: #fff;
+}   
+
+ .btn > input[type="button"]:hover {
+    color: #ed4040;
+    border-color: #ed4040;
+} 
+
+/*  评论区模态框 - end  */
+
+/*  文章内容区模态框 - start  */
+.moda-lity-con {
+    display: none;
+    width: 360px;
+    margin-left: -180px;
+}
+.moda-lity-con .cancel-tag {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.moda-lity-con .cancel-tag > span {
+    display: inline-block;
+    width: 100%;
+    padding: 5px 0;
+    color: #48576a;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.moda-lity-con .cancel-tag > span > input[type="checkbox"] {
+    float: right;
+}
+
+.moda-lity-con .scold {
+    margin-top: 10px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.moda-lity-con .scold > a {
+    color: #406599;
+}
+
+.moda-lity-con .scold > a .fa-angle-up {
+    display: none;  
+}
+
+
+/*  文章内容区模态框 - end  */
+
+/*   模态框 - end   */
+
+/* 右边 广告位 end */

@@ -1,0 +1,26 @@
+.body_ct .share-list {
+    display: inline-block;
+    width: 660px;
+    height: 43px;
+    border-bottom: 2px solid #f2f2f2;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+    position: absolute;
+    background-color: #fff;
+    z-index: 10;
+    top: 0;
+    /* transition: 0.5 all; */
+}
+
+.body_ct .share-list li {
+    display: inline-block;
+    padding: 10px 0px 7px 0px;
+    margin-right: 20px; 
+    color: black;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.share-list-check {
+    border-bottom: 2px solid orange;
+}

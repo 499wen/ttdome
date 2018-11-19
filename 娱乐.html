@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.12/css/uikit.min.css" />
+    <!-- UIkit JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.12/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.12/js/uikit-icons.min.js"></script>
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/list.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> 头条 - 娱乐 </title>
+</head>
+
+<body>
+
+    <div id="app">
+        <!--  点击推荐的 X 出现的效果  -->
+        <div class="model-frame">
+            将减少推荐类似内容
+
+        </div>
+
+        <!--  点击能返回顶部  -->
+        <div class="scroll-top">
+
+            <!-- 首页才有 -->
+            <div class="top">
+                <img src="./images/scroll_01.png" alt="">
+                <span class="warning">网上有害信息举报</span>
+            </div>
+
+            <return-tops></return-tops>
+
+        </div>
+
+        <!-- 顶部 start -->
+        <tops></tops>
+
+        <!-- 顶部 end -->
+
+        <!-- 主体 start -->
+        <div class="body">
+            <!-- 左侧导航 - start -->
+
+            <navs defaults="enter"></navs>
+
+            <!-- 左侧导航 - end  -->
+
+            <!-- 中间列表 - start -->
+
+            <div class="body_ct">
+
+                <!-- 卡片： 导航 -->
+                <care-navs></care-navs>
+
+                <br><br>
+
+                <!-- 未读新闻提示 -->
+                <tips></tips>
+
+                <!-- 推荐新闻提示 -->
+                <retips></retips>
+
+                <!-- 卡片： 列表 -->
+                <care-lists></care-lists>
+            </div>
+
+            <!-- 中间列表 - end -->
+
+            <!-- 右侧 - start -->
+
+            <div class="body_rt">
+                <!-- 搜索框 -->
+                <searchs></searchs>
+
+                <!-- 广告 、 24小时热闻 、 精彩图片 -->
+                <advs></advs>
+
+                <!-- 24小时热闻 -->
+                <hours></hours>
+
+                <!-- 第二类广告 -->
+                <advs-two></advs-two>
+
+                <!-- 第三类广告 -->
+                <advs-three></advs-three>
+
+                <!-- 精彩图片 -->
+                <pane-module></pane-module>
+
+            </div>
+
+            <!-- 右侧 - end -->
+        </div>
+
+        <!-- 主体 end -->
+
+    </div>
+
+</body>
+
+</html>
+<script src="./js/jquery.js"></script>
+<!-- <script src="js/Vue.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+<script src="js/component.js"></script>
+
+<script>
+    const app = new Vue({
+        el: "#app",
+        data: {}
+    })
+
+    
+</script>
+<script src="js/share.js"></script>
+<script src="js/list.js"></script>
+<script src="js/lbt.js"></script>
